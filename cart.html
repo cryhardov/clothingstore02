@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #333;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1f1f1f;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .cart-item span {
+            flex: 1;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #6200ea;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #3700b3;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="tees.html">Футболки</a></li>
+            <li><a href="hoodies.html">Худі</a></li>
+            <li><a href="acs.html">Аксесуари</a></li>
+            <li><a href="cart.html">Кошик</a></li>
+            <li><a href="about.html">Про нас</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Кошик</h1>
+
+    <div class="cart-item">
+        <img src="tee2.jpg" alt="Футболка">
+        <span>Футболка "MARBLE" - $20</span>
+        <button>Видалити</button>
+    </div>
+    
+    <div class="cart-item">
+        <img src="hood1.jpg" alt="Худі">
+        <span>Худі "EMBRO BLUE" - $30</span>
+        <button>Видалити</button>
+    </div>
+
+    <button>Оформити замовлення</button>
+</main>
+
+<footer>
+    <p>&copy; 2024 Магазин одягу. Усі права захищені.</p>
+</footer>
+
+</body>
+</html>
